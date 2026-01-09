@@ -1,24 +1,26 @@
 # Decision Tree vs Random Forest Regression
 
-This project compares the performance of Decision Tree and Random Forest regression models on a dataset using Python and scikit-learn.
+This project compares the performance of **Decision Tree Regressor** and **Random Forest Regressor** on a housing dataset using Python and scikit-learn.
 
 ## Objective
-To understand how ensemble learning (Random Forest) improves performance compared to a single Decision Tree model.
+To explore how ensemble learning (Random Forest) improves prediction accuracy compared to a single Decision Tree.
 
-## Models Used
-- DecisionTreeRegressor
-- RandomForestRegressor
+## Dataset
+The dataset contains housing data, including median house value, housing age, total bedrooms, and total rooms. Missing values have been removed.
+
+## Features Used
+- housing_median_age
+- total_bedrooms
+- total_rooms
+
+## Models
+- DecisionTreeRegressor (max_leaf_nodes=125)
+- RandomForestRegressor (max_leaf_nodes=125)
 
 ## Evaluation Metric
 - Mean Absolute Error (MAE)
 
-## Tools & Libraries
-- Python
-- Pandas
-- Scikit-learn
-- Jupyter Notebook
-
 ## What I Learned
-- How train-test split affects model evaluation
-- Why Random Forest generally performs better than Decision Trees
-- The importance of model evaluation using MAE
+- How to split data into training and validation sets
+- How model parameters affect performance
+- The power of ensemble methods like Random Forest
